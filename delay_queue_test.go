@@ -12,8 +12,8 @@ func TestDelayQueueOffer(t *testing.T) {
 	if len(q.C) != 0 {
 		t.Error("TestOffer1 len <> 0")
 	}
-	q.Offer(1, time.Now().Add(-10*time.Second))
-	ele := q.C
+	q.Offer(1, time.Now())
+	ele := <-q.C
 	if ele == nil {
 		t.Error("TestOffer2 len <> 0")
 	}
@@ -41,5 +41,5 @@ func TestStop(t *testing.T) {
 }
 
 func TestPoll(t *testing.T) {
-
+	return
 }
