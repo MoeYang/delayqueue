@@ -101,7 +101,7 @@ func (dq *DelayQueue) Poll() {
 		}
 	}
 exit:
-	// if exit,set sleepStatus to 0
+	// if exit,  set sleepStatus to 0
 	atomic.StoreInt32(&dq.sleepStatus, 0)
 }
 
