@@ -32,7 +32,7 @@ func TestPeek(t *testing.T) {
 	q.Offer(1, 100)
 	ele := q.Peek()
 	if ele == nil || ele.Value.(int) != 1 {
-		t.Error("TestPeek_err1 ele.Value != 1")
+		t.Error("TestPeek_err1  ele.Value != 1")
 	}
 	q.Offer(2, 10)
 	ele = q.Peek()

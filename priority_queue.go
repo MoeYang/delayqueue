@@ -59,7 +59,7 @@ func (pq *PriorityQueue) PeekAndRemove() *Element {
 	return ele
 }
 
-// implement func for container/heap interface
+// implement func for container/heap  interface
 
 func (pq PriorityQueue) Len() int {
 	return len(pq)
