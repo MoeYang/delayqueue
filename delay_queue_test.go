@@ -35,7 +35,7 @@ func TestStop(t *testing.T) {
 	wg.Done()
 	select {
 	case <-time.After(10 * time.Second):
-		t.Error("TestStop_err ")
+		t.Error("TestStop_err")
 	case <-ch:
 	}
 }
