@@ -19,6 +19,7 @@ go q.Poll()
 // get ready element from delay queue
 ele := <-q.C
 fmt.Println(ele) // Task{ID: 1}
+
 // stop go q.Poll(), you can run queue by call q.Poll() then.
 q.Stop()
 
