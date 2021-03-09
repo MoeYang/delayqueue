@@ -1,5 +1,5 @@
 # go-queue
-A Priority and Delay queue by Golang
+A Multi-safe Delay queue by Golang.
 
 #### How To Use
 
